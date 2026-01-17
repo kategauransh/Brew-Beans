@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew | Artisan Coffee House</title>
+    <meta name="description"
+        content="Experience the finest artisan coffee and freshly baked pastries at Bean & Brew. A premium cafe experience in the city.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> Bean & Brew
+            </a>
+
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="btn-primary">Visit Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg">
+            <img src="./images/hero.png" alt="Cozy Cafe Interior">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="subtitle fade-in-up">Est. 2024</span>
+            <h1 class="fade-in-up delay-1">Experience the Art of <span class="accent-text">Coffee</span></h1>
+            <p class="fade-in-up delay-2">Where premium beans meet passion. Join us for a moment of tranquility in every
+                cup.</p>
+            <div class="hero-btns fade-in-up delay-3">
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+                <a href="#contact" class="btn btn-filled">Find Us</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container about-grid">
+            <div class="about-image scroll-reveal left">
+                <img src="./images/coffee.png" alt="Latte Art">
+                <div class="experience-badge">
+                    <span class="years">10+</span>
+                    <span class="label">Years of<br>Excellence</span>
+                </div>
+            </div>
+            <div class="about-text scroll-reveal right">
+                <span class="section-subtitle">Our Story</span>
+                <h2>Brewing Memories, One Cup at a Time</h2>
+                <p>At Bean & Brew, we believe coffee is more than just a drink—it’s a ritual. Sourced from the finest
+                    ethical farms in Ethiopia and Colombia, our beans are roasted in small batches to preserve their
+                    unique character.</p>
+                <p>Whether you're here for a morning pick-me-up or a relaxing afternoon with a book, our space is
+                    designed for you.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-leaf"></i> Ethically Sourced Beans</li>
+                    <li><i class="fa-solid fa-medal"></i> Award Winning Baristas</li>
+                    <li><i class="fa-solid fa-wifi"></i> Cozy Ambience & Free WiFi</li>
+                </ul>
+                <a href="#menu" class="btn-text">Discover Our Blends <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">Discover Flavour</span>
+                <h2>Curated Menu</h2>
+                <p>Handcrafted beverages and freshly baked delights.</p>
+            </div>
+
+            <div class="menu-tabs scroll-reveal">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="coffee">Coffee</button>
+                <button class="tab-btn" data-category="pastry">Pastries</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Classic Espresso</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$3.50</span>
+                    </div>
+                    <p class="item-desc">Rich and intense single shot.</p>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Cappuccino</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$4.50</span>
+                    </div>
+                    <p class="item-desc">Espresso with steamed milk and thick foam.</p>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Caramel Macchiato</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$5.00</span>
+                    </div>
+                    <p class="item-desc">Espresso, vanilla syrup, steamed milk and caramel drizzle.</p>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="item-header">
+                        <span class="item-name">Cold Brew</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$4.75</span>
+                    </div>
+                    <p class="item-desc">Steeped for 12 hours for a smooth, bold taste.</p>
+                </div>
+
+                <!-- Pastry Items -->
+                <div class="menu-item" data-category="pastry">
+                    <div class="item-header">
+                        <span class="item-name">Butter Croissant</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$3.75</span>
+                    </div>
+                    <p class="item-desc">Flaky, buttery, and freshly baked every morning.</p>
+                </div>
+                <div class="menu-item" data-category="pastry">
+                    <div class="item-header">
+                        <span class="item-name">Almond Danis</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$4.25</span>
+                    </div>
+                    <p class="item-desc">Filled with sweet almond paste and topped with sliced almonds.</p>
+                </div>
+                <div class="menu-item" data-category="pastry">
+                    <div class="item-header">
+                        <span class="item-name">Chocolate Muffin</span>
+                        <span class="item-line"></span>
+                        <span class="item-price">$3.95</span>
+                    </div>
+                    <p class="item-desc">Decadent double chocolate chunk muffin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax / Speciality -->
+    <section class="section parallax-banner">
+        <div class="overlay"></div>
+        <div class="container banner-content text-center scroll-reveal">
+            <h2>"Life begins after coffee."</h2>
+            <br>
+            <a href="#contact" class="btn btn-filled">Reserve a Table</a>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-subtitle">Atmosphere</span>
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal delay-1">
+                    <img src="./images/pastry.png" alt="Pastry">
+                </div>
+                <div class="gallery-item scroll-reveal delay-2">
+                    <img src="./images/coffee.png" alt="Coffee">
+                </div>
+                <div class="gallery-item scroll-reveal delay-3">
+                    <img src="./images/hero.png" alt="Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Bean & Brew</h3>
+                <p>Crafting moments of joy, one cup at a time. Visit us for the ultimate coffee experience.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <ul>
+                    <li>Mon - Fri: 7:00 AM - 8:00 PM</li>
+                    <li>Sat - Sun: 8:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Coffee Lane, Brew City</li>
+                    <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@beanandbrew.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Bean & Brew. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
