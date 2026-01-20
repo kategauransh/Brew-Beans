@@ -24,7 +24,7 @@ A modern, fully responsive website designed for **Bean & Brew**, a premium artis
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/CafeWebsite.git
+    git clone https://github.com/kategauransh/Brew-Beans.git
     ```
 2.  **Open the project:**
     Navigate to the project folder and open `index.html` in your web browser.
@@ -51,4 +51,4 @@ A modern, fully responsive website designed for **Bean & Brew**, a premium artis
 The design prioritizes "visual comfort" using a dark mode theme to reduce eye strain while highlighting the premium nature of the brand with gold accents. The "Life begins after coffee" parallax section adds a touch of personality to the browsing experience.
 
 ---
-*Created with ❤️ by [Your Name]*
+*Created with ❤️ by Gauransh*
